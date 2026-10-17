@@ -1,0 +1,87 @@
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  margin: 0;
+  background: linear-gradient(darkgreen 10%, black)
+}
+
+#CPS {
+  padding: 40px 60px;
+  border: none;
+  border-radius: 20px;
+  background-color: royalblue;
+  color: white;
+  font-size: 24px;
+  cursor: pointer;
+  box-shadow: 3px 3px 3px gray;
+  touch-action: manipulation;
+}
+
+.buts {
+  padding: 20px 40px;
+  border: none;
+  border-radius: 15px;
+  background: linear-gradient(black 1%, darkgreen);
+  color: black;
+  font-size: 20px;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  margin: 20px;
+}
+
+/* Nur für Maus */
+#CPS:hover {
+  background-color: darkblue;
+}
+
+#CPS:disabled {
+  background-color: gray;
+  cursor: not-allowed;
+}
+
+#End {
+  display: none;
+  margin-top: 23px;
+  font-size: 24px;
+  text-align: center;
+  background-color: green;
+}
+
+#End:disabled {
+  display: none;
+}
+
+#close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+#close:disabled {
+  display: none;
+}
+
+#End2 {
+  color: white;
+  outline: thick double whitesmoke;
+}
+
+.inactive {
+  display: none;
+}
+
+#back {
+  position: absolute;
+  padding: 5px;
+  top: 2%;
+  left: 3%;
+  border-radius: 15px;
+  background-color: aquamarine;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
